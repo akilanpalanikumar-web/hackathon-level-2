@@ -3,19 +3,39 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hackathon Level-2 Activity Tracker</title>
-  <link rel="stylesheet" href="style.css">  
+  <title>Activity Tracker </title>
+  <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
-
   <header>
-    <h1>Activity Tracker</h1>
+    <h1>Activity Tracker with CRUD</h1>
     <p>Hackathon Level-2: Interactivity Implementation</p>
   </header>
 
   <div class="container">
     <div class="card">
-      <h2>Progress Summary</h2>
+      <h2 id="formTitle">Add New Activity</h2>
+
+      <div class="form-group">
+        <input type="text" id="activityTitle" placeholder="Enter activity title" />
+      </div>
+
+      <div class="form-group">
+        <textarea id="activityDescription" placeholder="Enter activity description"></textarea>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn btn-primary" onclick="saveActivity()">Save Activity</button>
+        <button class="btn btn-secondary" onclick="clearForm()">Clear</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="summary-top">
+        <h2>Progress Summary</h2>
+        <button class="btn btn-danger" onclick="resetActivities()">Reset All</button>
+      </div>
+
       <p id="progressText">0 out of 0 activities completed</p>
 
       <div class="progress-bar">
@@ -23,10 +43,6 @@
       </div>
 
       <p id="statusMessage"></p>
-
-      <div class="top-buttons">
-        <button class="btn btn-reset" onclick="resetActivities()">Reset All</button>
-      </div>
     </div>
 
     <div class="card">
@@ -34,6 +50,7 @@
       <div id="activityList" class="activity-list"></div>
     </div>
   </div>
-  <script src="script.js">
+
+ <script src="script.js>
 </body>
 </html>

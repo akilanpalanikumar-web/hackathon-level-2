@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hackathon Level-2 Activity Tracker</title>
+</head>
+<body>
+
+  <header>
+    <h1>Activity Tracker</h1>
+    <p>Hackathon Level-2: Interactivity Implementation</p>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <h2>Progress Summary</h2>
+      <p id="progressText">0 out of 0 activities completed</p>
+
+      <div class="progress-bar">
+        <div id="progressFill" class="progress-fill"></div>
+      </div>
+
+      <p id="statusMessage"></p>
+
+      <div class="top-buttons">
+        <button class="btn btn-reset" onclick="resetActivities()">Reset All</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Activity List</h2>
+      <div id="activityList" class="activity-list"></div>
+    </div>
+  </div>
+</body>
+</html>

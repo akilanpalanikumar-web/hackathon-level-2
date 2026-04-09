@@ -29,6 +29,8 @@ The objective is to build a beginner-friendly front-end application that allows 
 ## File Structure
 This project is made in a single file:
 - `index.html`
+- `style.css`
+- `script.js`
 
 ## How It Works
 1. Activity data is stored in a JavaScript array.

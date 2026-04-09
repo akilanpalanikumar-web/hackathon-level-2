@@ -1,4 +1,4 @@
-  * {
+    * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
@@ -28,7 +28,7 @@
 
     .container {
       width: 90%;
-      max-width: 900px;
+      max-width: 1000px;
       margin: 25px auto;
     }
 
@@ -45,8 +45,78 @@
       color: #1d4ed8;
     }
 
-    #progressText {
+    .form-group {
       margin-bottom: 12px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      font-size: 15px;
+      outline: none;
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 90px;
+    }
+
+    .btn-row {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+
+    .btn {
+      border: none;
+      padding: 10px 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn-primary {
+      background: #2563eb;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: #1e40af;
+    }
+
+    .btn-secondary {
+      background: #64748b;
+      color: white;
+    }
+
+    .btn-secondary:hover {
+      background: #475569;
+    }
+
+    .btn-danger {
+      background: #ef4444;
+      color: white;
+    }
+
+    .btn-danger:hover {
+      background: #dc2626;
+    }
+
+    .summary-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    #progressText {
+      margin: 12px 0;
       font-weight: bold;
       font-size: 18px;
     }
@@ -73,31 +143,6 @@
       margin-top: 10px;
     }
 
-    .top-buttons {
-      margin-top: 15px;
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-    }
-
-    .btn {
-      border: none;
-      padding: 10px 15px;
-      border-radius: 8px;
-      cursor: pointer;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-
-    .btn-reset {
-      background: #ef4444;
-      color: white;
-    }
-
-    .btn-reset:hover {
-      background: #dc2626;
-    }
-
     .activity-list {
       display: grid;
       gap: 15px;
@@ -119,6 +164,11 @@
     .activity-card.completed {
       border-left-color: #22c55e;
       background: #ecfdf5;
+    }
+
+    .activity-info {
+      flex: 1;
+      min-width: 220px;
     }
 
     .activity-info h3 {
@@ -149,24 +199,41 @@
       color: #166534;
     }
 
-    .complete-btn {
-      background: #2563eb;
-      color: white;
+    .action-buttons {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .small-btn {
       border: none;
-      padding: 10px 14px;
+      padding: 9px 12px;
       border-radius: 8px;
       cursor: pointer;
-      transition: 0.3s;
       font-weight: bold;
+      color: white;
     }
 
-    .complete-btn:hover {
-      background: #1e40af;
+    .complete-btn {
+      background: #16a34a;
     }
 
-    .complete-btn:disabled {
+    .edit-btn {
+      background: #f59e0b;
+    }
+
+    .delete-btn {
+      background: #ef4444;
+    }
+
+    .small-btn:disabled {
       background: #9ca3af;
       cursor: not-allowed;
+    }
+
+    .empty-message {
+      color: #666;
+      font-style: italic;
     }
 
     @media (max-width: 600px) {
